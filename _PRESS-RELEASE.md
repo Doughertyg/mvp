@@ -1,4 +1,4 @@
-# Project Name #
+# BeerNerdz #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,17 +16,17 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+## Beer Reviews for Beer Nerdz - BeerNerdz.com ##
+  > Everything you need to know about that new beer on the shelf
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Finally, a site for true beer nerdz ##
+  > For true fans of good beer, a site that puts all the stats, information, and comparison tools one could want in one place.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Combining a concise beer review and rating system with robust tools to find good beers, compare beers in the wild, and review your favorite beers, BeerNerdz gives beer fans the tools they need to smartly enjoy and share their favorite beverages.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > BeerNerdz creates a place for concise reviews of beers while providing a plethora of useful statistics and tools to review, share, and compare beers while eliminating overly long reviews and unhelpful ratings systems to give beer fans exactly what they want.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
@@ -38,7 +38,7 @@ Once the project moves into development, the press release can be used as a touc
   > Describe how easy it is to get started.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  > "Graham Dougherty is the next Elon Musk, you can quote me on that!" --graham dougherty
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
