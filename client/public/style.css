@@ -46,3 +46,121 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body {
+	background-color: #060605cc;
+	font-family: sans-serif;
+	/*#e1dcc07d*/
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 34px;
+	margin-bottom: 5px;
+	font-style: normal;
+}
+
+h2 {
+	font-weight: 600;
+	margin: 2px 0;
+}
+
+a {
+	color: #060605cc;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	font-size: 18px;
+}
+
+a:hover {
+	color: #104ad2;
+}
+
+.main-content {
+	width: 98%;
+	max-width: 680px;
+	margin: 5px auto;
+	border-radius: 3px;
+	background-color: #ffff;
+	height: 1200px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.beer-pic {
+	width: 180px;
+	margin: 3px;
+}
+
+.beer-info, .beer-rankings {
+	display: inline-block;
+	margin-left: 15px;
+	vertical-align: top;
+}
+
+.style {
+	margin: 15px 0;
+	font-style: italic;
+}
+
+.beer-rankings, .score {
+	float: right;
+	margin-right: 8px;
+	text-align: right;
+	font-size: 12px;
+	/*font-style: italic;*/
+}
+
+.divider {
+	border-top: 1px solid #373737;
+	width: 50%;
+	margin-bottom: 8px;
+	margin-left: 50%;
+}
+
+.center-text {
+	margin: 15px auto;
+	text-align: center;
+}
+
+.info-details {
+	margin-left: 15px;
+	font-size: 14px;
+}
+
+.score {
+	display: inline-block;
+	margin: 0 auto;
+	width: 25%;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.score-breakdown {
+	height: 100px;
+	width: 100%;
+	vertical-align: center;
+}
+
+.reviews {
+	display: block;
+}
+
+.photo-wheel {
+	display: inline-block;
+	height: 150px;
+}
+
+.beer-photos-container {
+	position: relative;
+	height: 150px;
+}
+
+.beer-photos {
+	position: absolute;
+	left: -50px;
+}
