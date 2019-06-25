@@ -1,14 +1,42 @@
 import React from 'react';
 import Beer from './beer.jsx';
 import Reviews from './reviews.jsx';
+import PhotosModal from './photosmodal.jsx';
+import faker from 'faker';
+import Addreview from './addreview.jsx';
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			beer: {}
+			beer: {},
+			toggle: false,
+			picinfocus: null,
+			reviews: []
 		}
+	}
+
+	fakeReviews() {
+
+		return (
+			{
+				avatar: faker.image.avatar(),
+				user: faker.internet.userName().split(' ').join('_'),
+				userlocation: faker.address.city() + ", " + faker.address.state(),
+				rating: faker.random.number({min:3.0, max:5.0}),
+				overallscore: faker.random.number({min:3.0, max:5.0}),
+				overall:  faker.lorem.sentence(),
+				appearancescore: faker.random.number({min:3.0, max:5.0}),
+				appearance:  faker.lorem.sentence(),
+				aromascore: faker.random.number({min:3.0, max:5.0}),
+				aroma:  faker.lorem.sentence(),
+				tastescore: faker.random.number({min:3.0, max:5.0}),
+				taste:  faker.lorem.sentence(),
+				date: faker.date.past()
+			}
+
+		)
 	}
 
 	defaultBeer() {
@@ -18,7 +46,7 @@ class App extends React.Component {
 				name: "World Wide Stout",
 				style: "Barrel-aged Imperial Stout",
 				brewery: "DogFish Head Brewery",
-				brewerylink: "www.dogfish.com",
+				brewerylink: "http://www.dogfish.com",
 				abv: 18.0,
 				ibu: 70,
 				og: 1.710,
@@ -50,20 +78,42 @@ class App extends React.Component {
 
 	componentDidMount() {
 		this.setState({
-			beer: this.defaultBeer()
+			beer: this.defaultBeer(),
+			reviews: [this.fakeReviews(), this.fakeReviews(), this.fakeReviews(), this.fakeReviews(), this.fakeReviews()]
 		})
+	}
+
+	togglePhotosModal(pic) {
+		console.log('toggle clicked!');
+
+		this.setState({
+			toggle: !this.state.toggle,
+			picinfocus: pic
+		})
+
+	}
+
+	toggleAddReviewModal() {
+		console.log('toggle clicked!');
+
+		this.setState({
+			addToggle: !this.state.addToggle
+		})
+
 	}
 
 	render () {
 		return (
 
 			<div>
+				{this.state.toggle === true ? <PhotosModal state={this.state} infocus={this.state.picinfocus} toggle={this.togglePhotosModal.bind(this)} /> : null}
 				<div>
-					<Beer beer={this.state.beer} />
+					<Beer beer={this.state.beer} toggle={this.togglePhotosModal.bind(this)} addtoggle={this.toggleAddReviewModal.bind(this)} />
 				</div>
 				<div>
-					<Reviews beer={this.state.beer} />
+					<Reviews beer={this.state.beer} state={this.state} />
 				</div>
+				{this.state.addToggle === true ? <Addreview toggle={this.toggleAddReviewModal.bind(this)} /> : null}
 			</div>
 
 		)

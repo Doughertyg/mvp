@@ -1,9 +1,16 @@
 import React from 'react';
+import Review from './review.jsx';
 
 const Reviews = (props) => (
 
 	<div className="reviews">
-		<h1>Reviews Here</h1>
+		{props.state.reviews.map(review => {
+			return (
+
+				<Review review={review} />
+
+			)
+		})}
 	</div>
 
 )

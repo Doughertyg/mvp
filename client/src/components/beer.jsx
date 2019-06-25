@@ -30,6 +30,7 @@ const Beer = (props) => (
 				<h2>Style Ranking: {props.beer.styleranking}</h2>
 				<h2>Style Fans Ranking: {props.beer.rankingfans}</h2>
 			</div>
+			<button className="addreview-button" onClick={props.addtoggle}>Review</button>
 			<div className="divider center-text" />
 			<div className="beer-summary center-text">
 				<p>
@@ -58,7 +59,7 @@ const Beer = (props) => (
 			<div className="divider center-text" />
 		</div>
 		<div className="beer-photos-container">
-			{props.beer.photos ? <Photos photos={props.beer.photos} /> : null}
+			{props.beer.photos ? <Photos photos={props.beer.photos} toggle={props.toggle} /> : null}
 		</div>
 	</div>
 
