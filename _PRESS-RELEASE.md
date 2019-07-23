@@ -28,17 +28,5 @@ Once the project moves into development, the press release can be used as a touc
 ## Problem ##
   > TekuGlass creates a place for concise reviews of beers while providing a plethora of useful statistics and tools to review, share, and compare beers while eliminating overly long reviews and unhelpful ratings systems to give beer fans exactly what they want.
 
-## Solution ##
-  > Describe how your product elegantly solves the problem.
-
-## Quote from You ##
-  > A quote from a spokesperson in your company.
-
-## How to Get Started ##
-  > Describe how easy it is to get started.
-
-## Customer Quote ##
-  > "Graham Dougherty is the next Elon Musk, you can quote me on that!" --graham dougherty
-
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > So if you love good beer and finding your next favorite beer and sharing it with your friends, head to TekuGlass and make an account and get started!
