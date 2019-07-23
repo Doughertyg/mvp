@@ -1,4 +1,4 @@
-# BeerNerdz #
+# TekuGlass #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,17 +16,17 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Beer Reviews for Beer Nerdz - BeerNerdz.com ##
+## Beer Reviews for Beer Nerdz - TekuGlass.com ##
   > Everything you need to know about that new beer on the shelf
 
 ## Finally, a site for true beer nerdz ##
   > For true fans of good beer, a site that puts all the stats, information, and comparison tools one could want in one place.
 
 ## Summary ##
-  > Combining a concise beer review and rating system with robust tools to find good beers, compare beers in the wild, and review your favorite beers, BeerNerdz gives beer fans the tools they need to smartly enjoy and share their favorite beverages.
+  > Combining a concise beer review and rating system with robust tools to find good beers, compare beers in the wild, and review your favorite beers, TekuGlass gives beer fans the tools they need to smartly enjoy and share their favorite beverages.
 
 ## Problem ##
-  > BeerNerdz creates a place for concise reviews of beers while providing a plethora of useful statistics and tools to review, share, and compare beers while eliminating overly long reviews and unhelpful ratings systems to give beer fans exactly what they want.
+  > TekuGlass creates a place for concise reviews of beers while providing a plethora of useful statistics and tools to review, share, and compare beers while eliminating overly long reviews and unhelpful ratings systems to give beer fans exactly what they want.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
