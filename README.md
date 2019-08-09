@@ -10,3 +10,7 @@
 
 > From within the root directory:
 "npm install"
+
+### Note
+
+> Project has been cloned to a new (private) repo for further development
