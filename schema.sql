@@ -7,56 +7,64 @@ USE beernerdz;
 CREATE TABLE beers (
 	id INT AUTO_INCREMENT UNIQUE,
 	name VARCHAR(255) NOT NULL,
-	style VARCHAR(255) NOT NULL,
+	style VARCHAR(255),
 	brewery VARCHAR(255) NOT NULL,
-	brewerylink VARCHAR(255) NOT NULL,
-	abv INT NOT NULL,
+	brewerylink VARCHAR(255),
+	abv INT,
 	ibu INT,
 	og INT,
 	fg INT,
-	hops VARCHAR(255) NOT NULL,
-	yeast VARCHAR(255) NOT NULL,
-	grain VARCHAR(255) NOT NULL,
-	distro VARCHAR(255) NOT NULL,
-	score INT NOT NULL,
-	reviews VARCHAR(255) NOT NULL,
-	ranking INT NOT NULL,
-	styleranking INT NOT NULL,
-	rankingfans INT,
-	appearance INT NOT NULL,
-	aroma INT NOT NULL,
-	taste INT NOT NULL,
-	mouth INT NOT NULL,
-	about VARCHAR(255) NOT NULL,
-	img VARCHAR(255) NOT NULL
+	hops VARCHAR(255),
+	yeast VARCHAR(255),
+	grain VARCHAR(255),
+	availability VARCHAR(255),
+	description VARCHAR(255),
+	img VARCHAR(255),
+	brewery_id INT NOT NULL
 );
 
 CREATE TABLE photos (
 	id INT AUTO_INCREMENT UNIQUE,
 	url VARCHAR(255) NOT NULL,
 	thumb VARCHAR(255) NOT NULL,
-	beer INT NOT NULL,
-	review INT NOT NULL
+	beer_id INT NOT NULL,
+	review_id INT NOT NULL,
+	user_id INT NOT NULL
 );
 
 CREATE TABLE reviews (
 	id INT AUTO_INCREMENT UNIQUE,
-	user VARCHAR(255) NOT NULL,
-	rating INT NOT NULL,
-	review_text VARCHAR(255) NOT NULL,
-	userlocation VARCHAR(255) NOT NULL,
+	user_id INT NOT NULL,
 	overallscore INT NOT NULL,
-	overall VARCHAR(255) NOT NULL,
-	appearancescore INT NOT NULL,
-	appearance VARCHAR(255) NOT NULL,
-	aromascore INT NOT NULL,
-	aroma VARCHAR(255) NOT NULL,
-	tastescore INT NOT NULL,
-	taste VARCHAR(255) NOT NULL,
+	overall VARCHAR(255),
+	appearancescore INT,
+	appearance VARCHAR(255),
+	aromascore INT,
+	aroma VARCHAR(255),
+	tastescore INT,
+	taste VARCHAR(255),
+	mouthscore INT,
+	mouth VARCHAR(255),
 	postdate VARCHAR(255) NOT NULL,
-	format VARCHAR(255) NOT NULL,
-	brewed_on INT,
+	format VARCHAR(255),
+	brew_date INT,
 	batch INT,
+	check_in VARCHAR(255)
+);
+
+CREATE TABLE users (
+	id INT AUTO_INCREMENT UNIQUE,
+	name VARCHAR(255) NOT NULL,
+	join_date INT NOT NULL,
+	location VARCHAR(255),
 	username VARCHAR(255) NOT NULL,
-	avatar VARCHAR(255) NOT NULL
+	email VARCHAR(255) NOT NULL,
+	avatar VARCHAR(255)
+);
+
+CREATE TABLE brewery (
+	id INT AUTO_INCREMENT UNIQUE,
+	name VARCHAR(255),
+	location VARCHAR(255),
+	description VARCHAR(255),
 );
